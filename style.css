@@ -1,0 +1,206 @@
+        #header {
+            background-color: pink;
+            position: sticky;
+            top: 0;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: space-between;
+            z-index: 1;
+        }
+        
+        #header-img {
+            max-width: 100%;
+            height: auto;
+            /* QUESTION 2 how to make logo not too small when wrapping and resizing*/
+            padding: 1em 4em 0.1em 4em;
+            overflow: auto;
+            /* TASK 3: learn how to use overflow properly */
+        }
+        
+        #header-img:hover {
+            transform: rotate(-10deg);
+        }
+        /* #nav-bar {
+                font-size: 32px;
+                //QUESTION 1 (about font-size)
+     why does it work when put here and not when put in nav-link 
+      display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+    }
+    */
+        
+        #nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .nav-link {
+            font-size: 30px;
+            padding-left: 2em;
+            padding-right: 1em;
+            padding-bottom: 0.3em;
+            font-family: 'Comfortaa', cursive;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .nav-link:hover {
+            color: rgb(234, 75, 146);
+        }
+        
+        .nav-link>a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        
+        #home {
+            /*QUESTION 4 how to make first section start under the header*/
+            background-image: url("bgd.jpg");
+            padding: 4em 5em 1.5em 5em;
+        }
+        
+        #baby-video {
+            display: block;
+            margin: 0 auto;
+        }
+        
+        #flex-text {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        p {
+            font-family: 'Comfortaa', cursive;
+            color: rgb(234, 75, 146);
+            font-size: 30px;
+            background-color: pink;
+            padding: 0.5em 1em;
+        }
+        
+        p:hover {
+            color: pink;
+            background-color: rgb(234, 75, 146);
+        }
+        
+        #products {
+            background: rgb(234, 75, 146);
+        }
+        
+        #product-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .product-card {
+            position: relative;
+            margin: 0em 8em;
+            background: wheat;
+            border-top-right-radius: 10%;
+            border-top-left-radius: 10%;
+        }
+        
+        #hoodie {
+            position: relative;
+            margin-right: 5em;
+            border: 10px solid pink;
+            border-radius: 20%;
+            box-shadow: 0 0 0 10px rgba(132, 36, 76, 0.8), 0 0 0 15px rgba(124, 36, 84, 0.9);
+        }
+        
+        #hoodie:hover {
+            transform: scale(1.05);
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+        
+        ul li:before {
+            content: '\2713';
+            margin: 0 1em;
+            /* any design */
+        }
+        
+        li {
+            font-size: 18px;
+            font-family: 'Comfortaa', cursive;
+            color: rgb(234, 75, 146);
+            padding: 0.5em;
+        }
+        
+        li:hover {
+            color: rgba(132, 36, 76, 0.8);
+        }
+        
+        #buy-btn {
+            position: absolute;
+            margin: 1em auto;
+            left: 0;
+            right: 0;
+            padding: 2em;
+            border-radius: 40%;
+            font-family: 'Comfortaa', cursive;
+            color: rgb(234, 75, 146);
+            font-size: 18px;
+            font-weight: 700;
+            background: pink;
+        }
+        
+        #buy-btn:hover {
+            color: pink;
+            background: rgb(234, 75, 146);
+            cursor: pointer;
+        }
+        
+        #polaroid {
+            padding: 4em 6em 3em 6em;
+        }
+        
+        #polaroid:hover>img {
+            transform: scale(1.1);
+        }
+        
+        #polaroid>p {
+            margin-top: 2em;
+            margin-left: 2em;
+            transform: rotate(5deg);
+            box-shadow: 0 0 0 10px rgb(234, 75, 146), 0 0 0 20px pink, 0 0 0 25px rgba(124, 36, 84, 0.9);
+            border-radius: 100%;
+            padding: 2em;
+            margin-bottom: 1em;
+        }
+        
+        #contact {
+            background-image: url("bgd.jpg");
+            padding: 4em 5em 1.5em 5em;
+        }
+        
+        #form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        body {
+            margin: 0
+        }
+        
+        @media(max-width:1010px) {
+            #nav-bar>.nav-link {
+                font-size: 20px;
+            }
+        }
+        
+        @media(max-width:680px) {
+            #header-img {
+                padding-right: 0em;
+            }
+        }
